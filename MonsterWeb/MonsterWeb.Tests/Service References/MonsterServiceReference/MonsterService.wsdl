@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="MonsterService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/Monsterdataservice/MonsterService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost/Monsterdataservice/MonsterService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost/Monsterdataservice/MonsterService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/MonsterApp.DataClient.Models" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IMonsterService_GetGenders_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGenders" />
+  </wsdl:message>
+  <wsdl:message name="IMonsterService_GetGenders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGendersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMonsterService_GetMonsterTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMonsterTypes" />
+  </wsdl:message>
+  <wsdl:message name="IMonsterService_GetMonsterTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMonsterTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMonsterService_GetTitles_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTitles" />
+  </wsdl:message>
+  <wsdl:message name="IMonsterService_GetTitles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTitlesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMonsterService_InsertMonster_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertMonster" />
+  </wsdl:message>
+  <wsdl:message name="IMonsterService_InsertMonster_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertMonsterResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IMonsterService">
+    <wsdl:operation name="GetGenders">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMonsterService/GetGenders" message="tns:IMonsterService_GetGenders_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMonsterService/GetGendersResponse" message="tns:IMonsterService_GetGenders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMonsterTypes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMonsterService/GetMonsterTypes" message="tns:IMonsterService_GetMonsterTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMonsterService/GetMonsterTypesResponse" message="tns:IMonsterService_GetMonsterTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTitles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMonsterService/GetTitles" message="tns:IMonsterService_GetTitles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMonsterService/GetTitlesResponse" message="tns:IMonsterService_GetTitles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertMonster">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMonsterService/InsertMonster" message="tns:IMonsterService_InsertMonster_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMonsterService/InsertMonsterResponse" message="tns:IMonsterService_InsertMonster_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IMonsterService" type="tns:IMonsterService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetGenders">
+      <soap:operation soapAction="http://tempuri.org/IMonsterService/GetGenders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMonsterTypes">
+      <soap:operation soapAction="http://tempuri.org/IMonsterService/GetMonsterTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTitles">
+      <soap:operation soapAction="http://tempuri.org/IMonsterService/GetTitles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertMonster">
+      <soap:operation soapAction="http://tempuri.org/IMonsterService/InsertMonster" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MonsterService">
+    <wsdl:port name="BasicHttpBinding_IMonsterService" binding="tns:BasicHttpBinding_IMonsterService">
+      <soap:address location="http://localhost/Monsterdataservice/MonsterService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

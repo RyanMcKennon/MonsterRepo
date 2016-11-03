@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="16581d0b-0f84-437a-b008-0148da575e4b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/MonsterDataService/MonsterService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MonsterService.xsd" MetadataType="Schema" ID="8790761c-819d-401f-8162-6742f901464e" SourceId="1" SourceUrl="http://localhost/Monsterdataservice/MonsterService.svc?xsd=xsd1" />
+    <MetadataFile FileName="MonsterService1.xsd" MetadataType="Schema" ID="27629b63-0c44-4d9e-b79c-aa0d9429a444" SourceId="1" SourceUrl="http://localhost/Monsterdataservice/MonsterService.svc?xsd=xsd2" />
+    <MetadataFile FileName="MonsterService2.xsd" MetadataType="Schema" ID="f1122463-306a-431a-8383-b5bbe11c66da" SourceId="1" SourceUrl="http://localhost/Monsterdataservice/MonsterService.svc?xsd=xsd0" />
+    <MetadataFile FileName="MonsterService.wsdl" MetadataType="Wsdl" ID="94c041f3-7ed7-4f81-9beb-ca4dd8066c0c" SourceId="1" SourceUrl="http://localhost/Monsterdataservice/MonsterService.svc?wsdl" />
+    <MetadataFile FileName="MonsterService.disco" MetadataType="Disco" ID="9bc4c9fa-921d-43a0-b9c6-3e9a50493598" SourceId="1" SourceUrl="http://localhost/Monsterdataservice/MonsterService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
